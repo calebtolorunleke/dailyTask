@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daily To-Do</title>
+    <link rel="stylesheet" href="output.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="bg-gray-300">
+    <div
+      class="container w-130 h-120 bg-blue-900 mx-auto mt-40 rounded-md shadow-2xl p-5 flex items-center"
+    >
+      <div
+        id="taskDiv"
+        class="w-120 h-110 container mx-auto rounded-md bg-white text-center p-10"
+      >
+        <h1 class="font-bold text-3xl">Daily To-Do</h1>
+        <div
+          class="inputDiv mt-4 flex flex-row g-8 items-center justify-between"
+        >
+          <input
+            id="newTask"
+            type="text"
+            autocomplete="off"
+            placeholder="Add a new task"
+            class="rounded-md border-gray-300 w-80 pl-3 h-10 border shadow-2xl"
+          />
+          <button
+            onclick="addTask()"
+            class="bg-blue-400 text-white h-10 rounded-md w-15 hover:bg-green-500 cursor-pointer transition duration-300"
+          >
+            Add
+          </button>
+        </div>
+
+        <div class="links flex gap-4 mt-3">
+          <a href="" class="underline">All</a>
+          <a href="">Active</a>
+          <a href="">Completed</a>
+        </div  class='mt-4 space-y-2' >
+        <ol id='taskContainer' class="text-justify">
+        
+        </ol>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
