@@ -18,6 +18,6 @@ function addTask() {
 
         newTaskedzero.value = ''
     } else {
-        alert('Please enter a task')
+        alert('Please enter a genuine task')
     }
 }
