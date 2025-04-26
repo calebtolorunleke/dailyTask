@@ -4,7 +4,7 @@ function addTask() {
     const newTasked = document.getElementById('newTask').value
     const newTaskedzero = document.getElementById('newTask')
 
-    console.log(newTasked)
+    console.log(newTasked)O
 
     // const taskInput = getElementById('newTask')
     const newTask = document.getElementById('newTask').value.trim()
@@ -17,7 +17,11 @@ function addTask() {
         taskContainer.appendChild(taskElement)
 
         newTaskedzero.value = ''
-    } else {
+    } else if (newTask !== 'a') {
+        console.log('Alert me')
+    }
+
+    else {
         alert('Please enter a genuine task')
     }
 }
